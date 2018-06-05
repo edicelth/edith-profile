@@ -7,13 +7,41 @@
   <title>Calculator</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
   <link rel="stylesheet" href="css/style.css?v=1.0" />
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+<style>
+.container1{
+  margin-left: 50px;
 
+    background-color: gray;
+    width: 700px;
+    height: 250px;
+}
+#p1{
+  margin-left: 90px;
+  font-size: 30px;
+  color: green;
+}
+#loam{
+    box-sizing: border-box;
+}
+#p8{
+  color:white ;
+  margin-left:30px;
+  margin-top: 30px;
+
+}
+#payment{
+  color: white;
+}
+#button1{
+  margin-left: 30px;
+}
+</style>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -32,18 +60,21 @@
 </header>
 
 <body>
-  <form>
+   <p id="p1"> Loan Calculator</p>
+  <div class="container1">
+    <form>
 
-    <p>Amount of money: <input id="loam"  type="text" /></p>
+      <p id="p8">Amount of money: <input id="loam"  type="text" /></p>
 
-    <p>Interest rate: <input id="interes" type="text" /></p>
+      <p id="p8">Interest rate: <input id="interes" type="text" /></p>
 
-    <p>Time (in years) for payment: <input id="time" type="text" /></p>
+      <p id="p8"> Time (in years) for payment: <input id="time" type="text" /></p>
 
-  </form>
+    </form>
   <button id = "button1"> Get mounthly payment </button>
   <input id="mounthPayment" type="text" />
-
+  <p id="payment"> </p>
+</div>
   <script src= "js/scripts1.js"></script>
 </body>
 </html>
