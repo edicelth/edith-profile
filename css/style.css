@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 }
 
+
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
@@ -13,7 +14,7 @@ body {
 }
 
 p {
-	font-size: .95em;
+	font-size: 1.10em;
 	margin-bottom: 1.5em;
 }
 
@@ -56,8 +57,8 @@ a {
 }
 
 .main-nav a {
-	font-size: .95em;
-	color: green;
+	font-size: .99em;
+	color:green;
 	text-transform: uppercase;
 }
 
@@ -68,8 +69,8 @@ a {
 /* ---- Layout Containers ---- */
 
 .container {
-	padding-left: 1em;
-	padding-right: 1em;
+	padding-left: 3em;
+	padding-right: 3em;
 }
 
 .main-header {
@@ -84,7 +85,33 @@ a {
 	padding: 2em 0;
 	background: #d9e4ea;
 }
+#h2{
+	margin-left:50px;
 
+}
+
+#h3{
+	margin-top: 70px;
+}
+
+#photo{
+	text-align: center;
+}
+#volunteer{
+	margin-top: 40px;
+	margin-bottom:30px;
+}
+#logo{
+	margin-top: 50px;
+	margin-bottom: 70px;
+}
+#experience{
+	margin-top: 50px;
+}
+
+#a{
+	color:blue;
+}
 /* =================================
   Media Queries
 ==================================== */
@@ -96,7 +123,7 @@ a {
 	}
 
 	.container {
-		width: 80%;
+		width: 100%;
 		max-width: 1150px;
 		margin: 0 auto;
 	}
@@ -126,10 +153,17 @@ padding-right: 1em;
 }
 
 .images {
-  width: 270px;
+  width: 500px;
   float: left;
   margin-top: 4%;
   margin-right: 8%;
 
 }
 }
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+			height: 500px;
+      margin: auto;
+  }
